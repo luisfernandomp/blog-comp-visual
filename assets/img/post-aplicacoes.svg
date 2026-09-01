@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Corte tomográfico simulado com região segmentada e histograma com limiar">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1024"/><stop offset="1" stop-color="#1b2050"/></linearGradient>
+<radialGradient id="tis" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#7e8496"/><stop offset=".78" stop-color="#4a4f60"/><stop offset="1" stop-color="#23273a"/></radialGradient>
+<radialGradient id="les" cx="42%" cy="36%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c9cede"/></radialGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<g font-family="Inter, Segoe UI, sans-serif" fill="#8f9ac4" font-size="19" letter-spacing=".08em">
+<text x="80" y="112">CORTE SIMULADO</text><text x="660" y="112">HISTOGRAMA E LIMIAR</text>
+</g>
+<rect x="80" y="146" width="440" height="400" rx="10" fill="#05070f" stroke="#2a3160" stroke-width="2"/>
+<ellipse cx="300" cy="346" rx="176" ry="158" fill="url(#tis)"/>
+<ellipse cx="238" cy="304" rx="62" ry="54" fill="#5c6274"/>
+<ellipse cx="360" cy="316" rx="58" ry="52" fill="#5c6274"/>
+<ellipse cx="296" cy="424" rx="46" ry="34" fill="#383d4e"/>
+<circle cx="358" cy="398" r="30" fill="url(#les)"/>
+<circle cx="358" cy="398" r="38" fill="none" stroke="#f472b6" stroke-width="3.5" stroke-dasharray="7 5"/>
+<text x="404" y="392" font-family="Inter, Segoe UI, sans-serif" font-size="17" fill="#f472b6">região segmentada</text>
+<text x="80" y="586" font-family="Inter, Segoe UI, sans-serif" font-size="17" fill="#8f9ac4">o contorno define o volume, e o volume entra no laudo</text>
+<g>
+<rect x="660.0" y="474.3" width="4" height="5.7" fill="#5b6494"/>
+<rect x="665.0" y="474.2" width="4" height="5.8" fill="#5b6494"/>
+<rect x="670.0" y="474.1" width="4" height="5.9" fill="#5b6494"/>
+<rect x="675.0" y="473.8" width="4" height="6.2" fill="#5b6494"/>
+<rect x="680.0" y="473.2" width="4" height="6.8" fill="#5b6494"/>
+<rect x="685.0" y="472.2" width="4" height="7.8" fill="#5b6494"/>
+<rect x="690.0" y="470.6" width="4" height="9.4" fill="#5b6494"/>
+<rect x="695.0" y="467.9" width="4" height="12.1" fill="#5b6494"/>
+<rect x="700.0" y="463.8" width="4" height="16.2" fill="#5b6494"/>
+<rect x="705.0" y="457.7" width="4" height="22.3" fill="#5b6494"/>
+<rect x="710.0" y="449.0" width="4" height="31.0" fill="#5b6494"/>
+<rect x="715.0" y="437.1" width="4" height="42.9" fill="#5b6494"/>
+<rect x="720.0" y="421.5" width="4" height="58.5" fill="#5b6494"/>
+<rect x="725.0" y="402.2" width="4" height="77.8" fill="#5b6494"/>
+<rect x="730.0" y="379.2" width="4" height="100.8" fill="#5b6494"/>
+<rect x="735.0" y="353.5" width="4" height="126.5" fill="#5b6494"/>
+<rect x="740.0" y="326.3" width="4" height="153.7" fill="#5b6494"/>
+<rect x="745.0" y="299.3" width="4" height="180.7" fill="#5b6494"/>
+<rect x="750.0" y="274.8" width="4" height="205.2" fill="#5b6494"/>
+<rect x="755.0" y="255.0" width="4" height="225.0" fill="#5b6494"/>
+<rect x="760.0" y="241.7" width="4" height="238.3" fill="#5b6494"/>
+<rect x="765.0" y="236.4" width="4" height="243.6" fill="#5b6494"/>
+<rect x="770.0" y="239.7" width="4" height="240.3" fill="#5b6494"/>
+<rect x="775.0" y="251.1" width="4" height="228.9" fill="#5b6494"/>
+<rect x="780.0" y="269.4" width="4" height="210.6" fill="#5b6494"/>
+<rect x="785.0" y="292.9" width="4" height="187.1" fill="#5b6494"/>
+<rect x="790.0" y="319.4" width="4" height="160.6" fill="#5b6494"/>
+<rect x="795.0" y="346.5" width="4" height="133.5" fill="#5b6494"/>
+<rect x="800.0" y="372.4" width="4" height="107.6" fill="#5b6494"/>
+<rect x="805.0" y="395.6" width="4" height="84.4" fill="#5b6494"/>
+<rect x="810.0" y="415.1" width="4" height="64.9" fill="#5b6494"/>
+<rect x="815.0" y="430.5" width="4" height="49.5" fill="#5b6494"/>
+<rect x="820.0" y="441.7" width="4" height="38.3" fill="#5b6494"/>
+<rect x="825.0" y="449.0" width="4" height="31.0" fill="#5b6494"/>
+<rect x="830.0" y="452.7" width="4" height="27.3" fill="#5b6494"/>
+<rect x="835.0" y="453.3" width="4" height="26.7" fill="#5b6494"/>
+<rect x="840.0" y="451.2" width="4" height="28.8" fill="#5b6494"/>
+<rect x="845.0" y="446.7" width="4" height="33.3" fill="#5b6494"/>
+<rect x="850.0" y="440.1" width="4" height="39.9" fill="#5b6494"/>
+<rect x="855.0" y="431.4" width="4" height="48.6" fill="#5b6494"/>
+<rect x="860.0" y="421.1" width="4" height="58.9" fill="#5b6494"/>
+<rect x="865.0" y="409.3" width="4" height="70.7" fill="#5b6494"/>
+<rect x="870.0" y="396.3" width="4" height="83.7" fill="#5b6494"/>
+<rect x="875.0" y="382.8" width="4" height="97.2" fill="#5b6494"/>
+<rect x="880.0" y="369.1" width="4" height="110.9" fill="#5b6494"/>
+<rect x="885.0" y="356.0" width="4" height="124.0" fill="#5b6494"/>
+<rect x="890.0" y="344.0" width="4" height="136.0" fill="#5b6494"/>
+<rect x="895.0" y="334.0" width="4" height="146.0" fill="#5b6494"/>
+<rect x="900.0" y="326.4" width="4" height="153.6" fill="#5b6494"/>
+<rect x="905.0" y="321.8" width="4" height="158.2" fill="#5b6494"/>
+<rect x="910.0" y="320.4" width="4" height="159.6" fill="#5b6494"/>
+<rect x="915.0" y="322.3" width="4" height="157.7" fill="#5b6494"/>
+<rect x="920.0" y="327.5" width="4" height="152.5" fill="#5b6494"/>
+<rect x="925.0" y="335.5" width="4" height="144.5" fill="#5b6494"/>
+<rect x="930.0" y="345.8" width="4" height="134.2" fill="#5b6494"/>
+<rect x="935.0" y="358.0" width="4" height="122.0" fill="#5b6494"/>
+<rect x="940.0" y="371.3" width="4" height="108.7" fill="#5b6494"/>
+<rect x="945.0" y="385.0" width="4" height="95.0" fill="#5b6494"/>
+<rect x="950.0" y="398.6" width="4" height="81.4" fill="#5b6494"/>
+<rect x="955.0" y="411.4" width="4" height="68.6" fill="#5b6494"/>
+<rect x="960.0" y="423.3" width="4" height="56.7" fill="#5b6494"/>
+<rect x="965.0" y="433.8" width="4" height="46.2" fill="#5b6494"/>
+<rect x="970.0" y="442.8" width="4" height="37.2" fill="#5b6494"/>
+<rect x="975.0" y="450.3" width="4" height="29.7" fill="#5b6494"/>
+<rect x="980.0" y="456.5" width="4" height="23.5" fill="#f472b6"/>
+<rect x="985.0" y="461.3" width="4" height="18.7" fill="#f472b6"/>
+<rect x="990.0" y="465.1" width="4" height="14.9" fill="#f472b6"/>
+<rect x="995.0" y="467.8" width="4" height="12.2" fill="#f472b6"/>
+<rect x="1000.0" y="469.8" width="4" height="10.2" fill="#f472b6"/>
+<rect x="1005.0" y="471.0" width="4" height="9.0" fill="#f472b6"/>
+<rect x="1010.0" y="471.6" width="4" height="8.4" fill="#f472b6"/>
+<rect x="1015.0" y="471.5" width="4" height="8.5" fill="#f472b6"/>
+<rect x="1020.0" y="470.6" width="4" height="9.4" fill="#f472b6"/>
+<rect x="1025.0" y="468.8" width="4" height="11.2" fill="#f472b6"/>
+<rect x="1030.0" y="465.7" width="4" height="14.3" fill="#f472b6"/>
+<rect x="1035.0" y="461.2" width="4" height="18.8" fill="#f472b6"/>
+<rect x="1040.0" y="455.1" width="4" height="24.9" fill="#f472b6"/>
+<rect x="1045.0" y="447.7" width="4" height="32.3" fill="#f472b6"/>
+<rect x="1050.0" y="439.3" width="4" height="40.7" fill="#f472b6"/>
+<rect x="1055.0" y="430.7" width="4" height="49.3" fill="#f472b6"/>
+<rect x="1060.0" y="422.8" width="4" height="57.2" fill="#f472b6"/>
+<rect x="1065.0" y="416.7" width="4" height="63.3" fill="#f472b6"/>
+<rect x="1070.0" y="413.3" width="4" height="66.7" fill="#f472b6"/>
+<rect x="1075.0" y="413.1" width="4" height="66.9" fill="#f472b6"/>
+<rect x="1080.0" y="416.2" width="4" height="63.8" fill="#f472b6"/>
+<rect x="1085.0" y="422.0" width="4" height="58.0" fill="#f472b6"/>
+<rect x="1090.0" y="429.7" width="4" height="50.3" fill="#f472b6"/>
+<rect x="1095.0" y="438.3" width="4" height="41.7" fill="#f472b6"/>
+<rect x="1100.0" y="446.8" width="4" height="33.2" fill="#f472b6"/>
+<rect x="1105.0" y="454.4" width="4" height="25.6" fill="#f472b6"/>
+<rect x="1110.0" y="460.7" width="4" height="19.3" fill="#f472b6"/>
+<rect x="1115.0" y="465.5" width="4" height="14.5" fill="#f472b6"/>
+<rect x="1120.0" y="468.9" width="4" height="11.1" fill="#f472b6"/>
+<rect x="1125.0" y="471.2" width="4" height="8.8" fill="#f472b6"/>
+<rect x="1130.0" y="472.6" width="4" height="7.4" fill="#f472b6"/>
+<rect x="1135.0" y="473.5" width="4" height="6.5" fill="#f472b6"/>
+</g>
+<line x1="660" y1="486" x2="1148" y2="486" stroke="#39406e" stroke-width="2"/>
+<line x1="990" y1="176" x2="990" y2="500" stroke="#fbbf24" stroke-width="3.5" stroke-dasharray="10 7"/>
+<text x="1000" y="200" font-family="monospace" font-size="20" fill="#fbbf24">T = 168</text>
+<g font-family="monospace" font-size="15" fill="#8f9ac4">
+<text x="656" y="512">0</text><text x="890" y="512">128</text><text x="1128" y="512">255</text>
+</g>
+<text x="660" y="558" font-family="Inter, Segoe UI, sans-serif" font-size="17" fill="#c8d0ee">nenhum vale do histograma indica um limiar obviamente certo</text>
+<text x="660" y="586" font-family="Inter, Segoe UI, sans-serif" font-size="17" fill="#8f9ac4">mover T em 10 níveis muda a área medida em vários por cento</text>
+</svg>

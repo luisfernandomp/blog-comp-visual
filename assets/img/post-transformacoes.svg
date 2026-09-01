@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Quadrado transformado por rotação, escala e cisalhamento com a matriz homogênea correspondente">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1024"/><stop offset="1" stop-color="#1b2050"/></linearGradient>
+<marker id="a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10z" fill="currentColor"/></marker>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<g font-family="Inter, Segoe UI, sans-serif" fill="#8f9ac4" font-size="19" letter-spacing=".08em">
+<text x="80" y="112">ESPAÇO TRANSFORMADO</text><text x="760" y="112">COORDENADAS HOMOGÊNEAS</text>
+</g>
+<g stroke="#2e3566" stroke-width="1.4">
+<path fill="none" d="M140.0 673.5L134.5 617.9L128.9 562.4L123.4 506.8L117.8 451.3L112.3 395.7L106.7 340.1L101.1 284.6L95.6 229.0"/>
+<path fill="none" d="M140.0 673.5L213.1 639.4L286.1 605.4L359.2 571.3L432.2 537.2L505.3 503.2L578.3 469.1L651.4 435.0L724.4 401.0"/>
+<path fill="none" d="M213.1 639.4L207.5 583.9L202.0 528.3L196.4 472.7L190.9 417.2L185.3 361.6L179.7 306.1L174.2 250.5L168.6 195.0"/>
+<path fill="none" d="M134.5 617.9L207.5 583.9L280.6 549.8L353.6 515.7L426.7 481.7L499.7 447.6L572.8 413.5L645.8 379.5L718.9 345.4"/>
+<path fill="none" d="M286.1 605.4L280.6 549.8L275.0 494.2L269.5 438.7L263.9 383.1L258.3 327.6L252.8 272.0L247.2 216.5L241.7 160.9"/>
+<path fill="none" d="M128.9 562.4L202.0 528.3L275.0 494.2L348.1 460.2L421.1 426.1L494.2 392.1L567.2 358.0L640.3 323.9L713.3 289.9"/>
+<path fill="none" d="M359.2 571.3L353.6 515.7L348.1 460.2L342.5 404.6L337.0 349.1L331.4 293.5L325.8 237.9L320.3 182.4L314.7 126.8"/>
+<path fill="none" d="M123.4 506.8L196.4 472.7L269.5 438.7L342.5 404.6L415.6 370.6L488.6 336.5L561.7 302.4L634.7 268.4L707.7 234.3"/>
+<path fill="none" d="M432.2 537.2L426.7 481.7L421.1 426.1L415.6 370.6L410.0 315.0L404.4 259.4L398.9 203.9L393.3 148.3L387.8 92.8"/>
+<path fill="none" d="M117.8 451.3L190.9 417.2L263.9 383.1L337.0 349.1L410.0 315.0L483.0 280.9L556.1 246.9L629.1 212.8L702.2 178.7"/>
+<path fill="none" d="M505.3 503.2L499.7 447.6L494.2 392.1L488.6 336.5L483.0 280.9L477.5 225.4L471.9 169.8L466.4 114.3L460.8 58.7"/>
+<path fill="none" d="M112.3 395.7L185.3 361.6L258.3 327.6L331.4 293.5L404.4 259.4L477.5 225.4L550.5 191.3L623.6 157.3L696.6 123.2"/>
+<path fill="none" d="M578.3 469.1L572.8 413.5L567.2 358.0L561.7 302.4L556.1 246.9L550.5 191.3L545.0 135.8L539.4 80.2L533.9 24.6"/>
+<path fill="none" d="M106.7 340.1L179.7 306.1L252.8 272.0L325.8 237.9L398.9 203.9L471.9 169.8L545.0 135.8L618.0 101.7L691.1 67.6"/>
+<path fill="none" d="M651.4 435.0L645.8 379.5L640.3 323.9L634.7 268.4L629.1 212.8L623.6 157.3L618.0 101.7L612.5 46.1L606.9 -9.4"/>
+<path fill="none" d="M101.1 284.6L174.2 250.5L247.2 216.5L320.3 182.4L393.3 148.3L466.4 114.3L539.4 80.2L612.5 46.1L685.5 12.1"/>
+<path fill="none" d="M724.4 401.0L718.9 345.4L713.3 289.9L707.7 234.3L702.2 178.7L696.6 123.2L691.1 67.6L685.5 12.1L680.0 -43.5"/>
+<path fill="none" d="M95.6 229.0L168.6 195.0L241.7 160.9L314.7 126.8L387.8 92.8L460.8 58.7L533.9 24.6L606.9 -9.4L680.0 -43.5"/>
+</g>
+<polygon fill="none" stroke="#6c76a8" stroke-width="2.4" stroke-dasharray="7 6" points="290.0,430.0 470.0,430.0 470.0,250.0 290.0,250.0 "/>
+<polygon fill="#7c5cff" fill-opacity=".28" stroke="#a78bfa" stroke-width="3.4" points="312.0,445.1 524.1,346.2 508.0,184.9 295.9,283.8 "/>
+<g stroke-width="4" marker-end="url(#a5)">
+<line color="#f472b6" stroke="#f472b6" x1="410.0" y1="315.0" x2="539.6" y2="254.6"/>
+<line color="#22d3ee" stroke="#22d3ee" x1="410.0" y1="315.0" x2="400.1" y2="216.4"/>
+</g>
+<text x="561" y="245" font-family="monospace" font-size="20" fill="#f472b6">i</text>
+<text x="399" y="200" font-family="monospace" font-size="20" fill="#22d3ee">j</text>
+<g font-family="monospace" font-size="30" fill="#e9ecfb">
+<text x="790" y="250"> 1.178   -0.090    30.0</text>
+<text x="790" y="310"> 0.549    0.896    25.0</text>
+<text x="790" y="370"> 0.000    0.000     1.0</text>
+</g>
+<text x="700" y="440" font-family="monospace" font-size="20" fill="#fbbf24">det = 1.105 — a área × 1,105</text>
+<path d="M772 208 h-18 v186 h18" fill="none" stroke="#8f9ac4" stroke-width="3"/>
+<path d="M1148 208 h18 v186 h-18" fill="none" stroke="#8f9ac4" stroke-width="3"/>
+<g font-family="Inter, Segoe UI, sans-serif" font-size="17" fill="#8f9ac4">
+<text x="700" y="498">rotação 25° · escala (1,30 · 0,85)</text>
+<text x="700" y="526">cisalhamento 0,35 · translação (30, 25)</text>
+<text x="700" y="554">a 3ª linha existe para a translação caber na matriz</text>
+<text x="80" y="586">a grade inteira do plano é levada junto, retas continuam retas, paralelas continuam paralelas</text>
+</g>
+</svg>

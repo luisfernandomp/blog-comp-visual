@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Vetores de gradiente perpendiculares ao contorno de um objeto e o mapa de bordas resultante">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1024"/><stop offset="1" stop-color="#1b2050"/></linearGradient>
+<pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#fff" stroke-opacity=".055" stroke-width="1"/></pattern>
+<marker id="av" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10z" fill="#fbbf24"/></marker>
+<radialGradient id="disc" cx="38%" cy="32%" r="72%"><stop offset="0" stop-color="#d8dcea"/><stop offset="1" stop-color="#8b93ad"/></radialGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#grid)"/>
+<g font-family="Inter, Segoe UI, sans-serif" fill="#8f9ac4" font-size="19" letter-spacing=".08em">
+<text x="80" y="112">IMAGEM E GRADIENTE ∇f</text><text x="680" y="112">MAGNITUDE APÓS LIMIAR</text>
+</g>
+<rect x="80" y="146" width="480" height="400" rx="10" fill="#141a38" stroke="#2a3160" stroke-width="2"/>
+<rect x="150" y="216" width="150" height="150" rx="6" fill="#6f7fa8"/>
+<circle cx="392" cy="404" r="104" fill="url(#disc)"/>
+<line x1="496.0" y1="404.0" x2="544.0" y2="404.0" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<line x1="488.1" y1="443.8" x2="532.4" y2="462.2" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<line x1="465.5" y1="477.5" x2="499.5" y2="511.5" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<line x1="318.5" y1="477.5" x2="284.5" y2="511.5" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<line x1="295.9" y1="443.8" x2="251.6" y2="462.2" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<line x1="288.0" y1="404.0" x2="240.0" y2="404.0" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<line x1="295.9" y1="364.2" x2="251.6" y2="345.8" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<line x1="318.5" y1="330.5" x2="284.5" y2="296.5" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<line x1="352.2" y1="307.9" x2="333.8" y2="263.6" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<line x1="392.0" y1="300.0" x2="392.0" y2="252.0" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<line x1="431.8" y1="307.9" x2="450.2" y2="263.6" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<line x1="465.5" y1="330.5" x2="499.5" y2="296.5" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<line x1="488.1" y1="364.2" x2="532.4" y2="345.8" stroke="#fbbf24" stroke-width="3" marker-end="url(#av)"/>
+<g stroke="#fbbf24" stroke-width="3" marker-end="url(#av)">
+<line x1="150" y1="266" x2="102" y2="266"/><line x1="300" y1="266" x2="348" y2="266"/>
+<line x1="225" y1="216" x2="225" y2="168"/><line x1="180" y1="366" x2="180" y2="414"/>
+</g>
+<rect x="680" y="146" width="440" height="400" rx="10" fill="#05070f" stroke="#2a3160" stroke-width="2"/>
+<rect x="740" y="216" width="150" height="150" rx="6" fill="none" stroke="#e9ecfb" stroke-width="3"/>
+<circle cx="962" cy="404" r="104" fill="none" stroke="#22d3ee" stroke-width="3"/>
+<rect x="1003" y="481" width="3" height="3" fill="#556"/>
+<rect x="763" y="353" width="3" height="3" fill="#556"/>
+<rect x="781" y="268" width="3" height="3" fill="#556"/>
+<rect x="849" y="259" width="3" height="3" fill="#556"/>
+<rect x="841" y="319" width="3" height="3" fill="#556"/>
+<rect x="738" y="254" width="3" height="3" fill="#556"/>
+<rect x="976" y="236" width="3" height="3" fill="#556"/>
+<rect x="774" y="241" width="3" height="3" fill="#556"/>
+<rect x="866" y="293" width="3" height="3" fill="#556"/>
+<rect x="997" y="303" width="3" height="3" fill="#556"/>
+<rect x="981" y="305" width="3" height="3" fill="#556"/>
+<rect x="875" y="459" width="3" height="3" fill="#556"/>
+<rect x="829" y="288" width="3" height="3" fill="#556"/>
+<rect x="842" y="304" width="3" height="3" fill="#556"/>
+<rect x="1055" y="442" width="3" height="3" fill="#556"/>
+<rect x="779" y="345" width="3" height="3" fill="#556"/>
+<rect x="947" y="296" width="3" height="3" fill="#556"/>
+<rect x="808" y="172" width="3" height="3" fill="#556"/>
+<rect x="1097" y="468" width="3" height="3" fill="#556"/>
+<rect x="795" y="406" width="3" height="3" fill="#556"/>
+<rect x="817" y="344" width="3" height="3" fill="#556"/>
+<rect x="966" y="240" width="3" height="3" fill="#556"/>
+<rect x="703" y="491" width="3" height="3" fill="#556"/>
+<rect x="967" y="487" width="3" height="3" fill="#556"/>
+<rect x="971" y="465" width="3" height="3" fill="#556"/>
+<rect x="960" y="239" width="3" height="3" fill="#556"/>
+<g font-family="monospace" font-size="18" fill="#8f9ac4">
+<text x="80" y="586">|∇f| = √(Gx² + Gy²)   ·   θ = arctan(Gy / Gx)</text>
+<text x="680" y="586">supressão não-máxima + histerese → contorno de 1 px</text>
+</g>
+</svg>

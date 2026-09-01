@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Prisma decompondo luz branca em espectro ao lado de três círculos RGB somando-se em branco">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1024"/><stop offset="1" stop-color="#1b2050"/></linearGradient>
+<linearGradient id="rain" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#8b00ff"/><stop offset=".18" stop-color="#4b0fd8"/><stop offset=".34" stop-color="#00a2ff"/>
+<stop offset=".5" stop-color="#00d46a"/><stop offset=".66" stop-color="#f2e600"/><stop offset=".83" stop-color="#ff8a00"/><stop offset="1" stop-color="#ff1f3d"/>
+</linearGradient>
+<linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity=".15"/><stop offset="1" stop-color="#ffffff" stop-opacity=".95"/></linearGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<g font-family="Inter, Segoe UI, sans-serif" fill="#8f9ac4" font-size="19" letter-spacing=".08em">
+<text x="80" y="112">ESPECTRO CONTÍNUO</text><text x="760" y="112">TRÊS PRIMÁRIAS · SÍNTESE ADITIVA</text>
+</g>
+<rect x="80" y="286" width="180" height="14" rx="7" fill="url(#beam)"/>
+<polygon points="300,190 420,410 180,410" fill="#c9d6f5" fill-opacity=".16" stroke="#9fb3e0" stroke-width="2.5"/>
+<polygon points="288,296 620,214 620,446" fill="url(#rain)" fill-opacity=".92"/>
+<g font-family="monospace" font-size="15" fill="#c8d0ee">
+<text x="630" y="226">700 nm</text><text x="630" y="336">550 nm</text><text x="630" y="452">400 nm</text>
+</g>
+<text x="80" y="262" font-family="Inter, Segoe UI, sans-serif" font-size="17" fill="#e9ecfb">luz branca</text>
+<text x="80" y="530" font-family="Inter, Segoe UI, sans-serif" font-size="17" fill="#8f9ac4">infinitos comprimentos de onda…</text>
+<g style="mix-blend-mode:screen">
+<circle cx="900" cy="266" r="118" fill="#ff2d2d"/>
+<circle cx="836" cy="376" r="118" fill="#20ff3a"/>
+<circle cx="964" cy="376" r="118" fill="#2d6bff"/>
+</g>
+<g font-family="monospace" font-size="22" fill="#0b1024" font-weight="700">
+<text x="890" y="222">R</text><text x="796" y="418">G</text><text x="994" y="418">B</text>
+</g>
+<text x="760" y="530" font-family="Inter, Segoe UI, sans-serif" font-size="17" fill="#8f9ac4">…comprimidos em três números pela retina</text>
+<text x="80" y="590" font-family="Inter, Segoe UI, sans-serif" font-size="18" fill="#c8d0ee">espectros diferentes que produzem o mesmo estímulo são metâmeros, é o que faz uma tela funcionar</text>
+</svg>
