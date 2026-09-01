@@ -29,6 +29,7 @@ window.POSTS = [
 /* ------------------------------------------------------------------ 1 */
 {
   slug: "imagem-digital",
+  draft: true,          // oculto: remova esta linha para publicar
   title: "Do fóton ao pixel: como nasce uma imagem digital",
   lead: "Antes de filtrar, transformar ou renderizar qualquer coisa, é preciso entender o que exatamente estamos manipulando. Amostragem, quantização e as duas resoluções que definem uma imagem.",
   date: "2026-08-04",
@@ -122,6 +123,7 @@ filtros clássicos, a convolução.</p>
 /* ------------------------------------------------------------------ 2 */
 {
   slug: "convolucao-filtragem",
+  draft: true,          // oculto: remova esta linha para publicar
   title: "Convolução: o motor da filtragem espacial",
   lead: "Uma janela pequena deslizando sobre a imagem, uma soma ponderada em cada posição. Dessa operação minúscula saem o desfoque, a nitidez, o realce de bordas e a primeira camada de qualquer rede neural convolucional.",
   date: "2026-08-07",
@@ -243,6 +245,7 @@ basta trocar de domínio.</p>
 /* ------------------------------------------------------------------ 3 */
 {
   slug: "dominio-frequencia",
+  draft: true,          // oculto: remova esta linha para publicar
   title: "Domínio da frequência: quando a imagem vira onda",
   lead: "Toda imagem pode ser escrita como uma soma de senoides. Nessa representação, filtrar deixa de ser deslizar uma janela e passa a ser apagar regiões de um espectro, e a convolução vira multiplicação.",
   date: "2026-08-11",
@@ -330,6 +333,7 @@ finas, encontrar bordas.</p>
 /* ------------------------------------------------------------------ 4 */
 {
   slug: "deteccao-bordas",
+  draft: true,          // oculto: remova esta linha para publicar
   title: "Detecção de bordas: gradiente, Sobel e a lógica do Canny",
   lead: "Uma borda é uma descontinuidade de intensidade, ou seja, um pico da derivada. Do operador de 3×3 ao algoritmo de Canny, o percurso de transformar uma imagem em um mapa de contornos.",
   date: "2026-08-14",
@@ -417,6 +421,7 @@ geométricas e coordenadas homogêneas.</p>
 /* ------------------------------------------------------------------ 5 */
 {
   slug: "transformacoes-geometricas",
+  draft: true,          // oculto: remova esta linha para publicar
   title: "Transformações geométricas e coordenadas homogêneas",
   lead: "Rotacionar, escalar, cisalhar e transladar com uma única multiplicação de matrizes, e o detalhe que decide a qualidade do resultado: a interpolação e o mapeamento inverso.",
   date: "2026-08-18",
@@ -511,6 +516,7 @@ apenas na hora de desenhar.</p>
 /* ------------------------------------------------------------------ 6 */
 {
   slug: "modelos-camera",
+  draft: true,          // oculto: remova esta linha para publicar
   title: "Modelos de câmera: pinhole, calibração e visão estéreo",
   lead: "Como um ponto do mundo vira um pixel, e como, a partir de dois pixels, recupera-se a profundidade perdida na projeção.",
   date: "2026-08-21",
@@ -611,6 +617,7 @@ pelo qual sensores de profundidade ativos <em>projetam</em> um padrão para cria
 /* ------------------------------------------------------------------ 7 */
 {
   slug: "luz-e-cor",
+  draft: true,          // oculto: remova esta linha para publicar
   title: "Luz e cor: do espectro contínuo aos três números do pixel",
   lead: "A cor não está no objeto nem na luz: é uma construção do sistema visual. Entender isso explica por que RGB é péssimo para segmentar, por que HSV existe e por que gamma nunca vai embora.",
   date: "2026-08-25",
@@ -704,6 +711,7 @@ cena viola a hipótese, como uma foto predominantemente verde de uma floresta.</
 /* ------------------------------------------------------------------ 8 */
 {
   slug: "pipeline-grafico",
+  draft: true,          // oculto: remova esta linha para publicar
   title: "O pipeline gráfico: da malha de triângulos ao pixel na tela",
   lead: "Sessenta vezes por segundo, milhões de vértices atravessam uma sequência fixa de estágios. Entender essa sequência é entender por que jogos são rápidos e por que certas coisas são caras.",
   date: "2026-08-28",

@@ -416,6 +416,8 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
   transition: transform .16s ease, border-color .16s ease;
 }
 .topic-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.topic-card.is-empty { opacity: .55; border-style: dashed; box-shadow: none; }
+.topic-card.is-empty:hover { border-color: var(--line); transform: none; }
 .topic-card b { display: block; font-size: 1rem; margin-bottom: .2rem; }
 .topic-card span { font-size: .84rem; color: var(--ink-faint); }
 

@@ -19,10 +19,13 @@
 
   var app = document.getElementById("conteudo");
   var POSTS = window.POSTS;
+  // Rascunhos (draft: true em js/posts.js) ficam fora de listagens, navegação e rotas.
+  // Para publicar um artigo, basta remover a linha draft do objeto correspondente.
+  var PUB = POSTS.filter(function (p) { return !p.draft; });
   var TOPICS = window.TOPICS;
   var SITE = window.SITE;
 
-  var byDate = POSTS.slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
+  var byDate = PUB.slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
 
   /* ---------------- utilidades ---------------- */
 
@@ -61,7 +64,7 @@
   }
 
   function postIndex(slug) {
-    for (var i = 0; i < POSTS.length; i++) if (POSTS[i].slug === slug) return i;
+    for (var i = 0; i < PUB.length; i++) if (PUB[i].slug === slug) return i;
     return -1;
   }
 
@@ -85,9 +88,10 @@
       '</a>';
   }
 
-  function gridHTML(list) {
+  function gridHTML(list, msg) {
     if (!list.length) {
-      return '<div class="empty"><h2>Nada encontrado</h2><p>Tente outro termo ou volte para <a href="#/artigos">todos os artigos</a>.</p></div>';
+      return '<div class="empty"><h2>' + (msg || "Nada encontrado") + "</h2>" +
+        '<p>Volte para <a href="#/artigos">todos os artigos</a>.</p></div>';
     }
     return '<div class="card-grid">' + list.map(function (p) { return cardHTML(p); }).join("") + "</div>";
   }
@@ -99,9 +103,13 @@
   /* ---------------- páginas ---------------- */
 
   function viewHome() {
+    if (!byDate.length) {
+      return '<div class="empty"><h2>Nenhum artigo publicado ainda</h2>' +
+        "<p>Os textos entram ao longo do semestre.</p></div>";
+    }
     var latest = byDate[0];
     var rest = byDate.slice(1, 7);
-    var demos = POSTS.filter(function (p) { return p.demo; }).length;
+    var demos = PUB.filter(function (p) { return p.demo; }).length;
 
     return '' +
     '<section class="hero"><div class="wrap hero-inner">' +
@@ -110,12 +118,13 @@
         "<h1>" + esc(SITE.tagline) + "</h1>" +
         '<p class="lead">' + esc(SITE.description) + "</p>" +
         '<div class="hero-actions">' +
-          '<a class="btn btn-primary" href="#/post/' + POSTS[0].slug + '">Começar pelo primeiro artigo</a>' +
+          '<a class="btn btn-primary" href="#/post/' + PUB[0].slug + '">' +
+            (PUB.length > 1 ? "Começar pelo primeiro artigo" : "Ler o artigo") + "</a>" +
           '<a class="btn btn-ghost" href="#/trilha">Ver a trilha completa</a>' +
         "</div>" +
         '<div class="hero-stats">' +
-          "<div><b>" + POSTS.length + "</b>artigos publicados</div>" +
-          "<div><b>" + demos + "</b>demonstrações interativas</div>" +
+          "<div><b>" + PUB.length + "</b>" + (PUB.length === 1 ? "artigo publicado" : "artigos publicados") + "</div>" +
+          "<div><b>" + demos + "</b>" + (demos === 1 ? "demonstração interativa" : "demonstrações interativas") + "</div>" +
           "<div><b>" + TOPICS.length + "</b>eixos do conteúdo</div>" +
         "</div>" +
       "</div>" +
@@ -127,19 +136,23 @@
       cardHTML(latest, true) +
     "</div></section>" +
 
-    '<section class="section" style="padding-top:0"><div class="wrap">' +
-      '<div class="section-head"><div><h2>Publicações anteriores</h2><p>Cada artigo traz uma demonstração que roda no seu navegador</p></div>' +
-      '<a class="btn btn-ghost" href="#/artigos">Ver todos</a></div>' +
-      gridHTML(rest) +
-    "</div></section>" +
+    (rest.length ?
+      '<section class="section" style="padding-top:0"><div class="wrap">' +
+        '<div class="section-head"><div><h2>Publicações anteriores</h2><p>Cada artigo traz uma demonstração que roda no seu navegador</p></div>' +
+        '<a class="btn btn-ghost" href="#/artigos">Ver todos</a></div>' +
+        gridHTML(rest) +
+      "</div></section>" : "") +
 
     '<section class="section" style="padding-top:0"><div class="wrap">' +
       '<div class="section-head"><div><h2>Navegue por eixo</h2><p>Os cinco blocos do conteúdo programático, mais um sobre aplicações</p></div></div>' +
       '<div class="topic-grid">' +
         TOPICS.map(function (t) {
-          var n = POSTS.filter(function (p) { return p.topic === t.id; }).length;
-          return '<a class="topic-card" href="#/topico/' + t.id + '"><b>' + esc(t.name) + "</b><span>" +
-                 esc(t.desc) + " · " + n + (n === 1 ? " artigo" : " artigos") + "</span></a>";
+          var n = PUB.filter(function (p) { return p.topic === t.id; }).length;
+          var corpo = "<b>" + esc(t.name) + "</b><span>" + esc(t.desc) + " · " +
+                      (n ? n + (n === 1 ? " artigo" : " artigos") : "em breve") + "</span>";
+          return n
+            ? '<a class="topic-card" href="#/topico/' + t.id + '">' + corpo + "</a>"
+            : '<div class="topic-card is-empty">' + corpo + "</div>";
         }).join("") +
       "</div>" +
     "</div></section>";
@@ -153,11 +166,13 @@
     });
 
     var tags = {};
-    POSTS.forEach(function (p) { p.tags.forEach(function (t) { tags[t] = (tags[t] || 0) + 1; }); });
+    PUB.forEach(function (p) { p.tags.forEach(function (t) { tags[t] = (tags[t] || 0) + 1; }); });
     var tagKeys = Object.keys(tags).sort();
 
     return pageHead("Todos os artigos",
-      "Nove textos publicados ao longo do semestre, do sinal contínuo até a imagem sintetizada. " +
+      (byDate.length === 1
+        ? "Por enquanto há um artigo publicado; os demais entram ao longo do semestre. "
+        : byDate.length + " textos publicados ao longo do semestre, do sinal contínuo até a imagem sintetizada. ") +
       "A busca percorre o texto completo de cada um.") +
     '<section class="section"><div class="wrap">' +
       '<div class="section-head">' +
@@ -185,12 +200,12 @@
       "O conteúdo programático da disciplina, reorganizado em eixos. Cada eixo reúne os artigos que o cobrem.") +
     '<section class="section"><div class="wrap stack-lg">' +
       TOPICS.map(function (t) {
-        var list = POSTS.filter(function (p) { return p.topic === t.id; })
+        var list = PUB.filter(function (p) { return p.topic === t.id; })
                         .sort(function (a, b) { return a.date.localeCompare(b.date); });
         return "<div>" +
           '<div class="section-head"><div><h2>' + esc(t.name) + "</h2><p>" + esc(t.desc) + "</p></div>" +
-          '<a class="btn btn-ghost" href="#/topico/' + t.id + '">Abrir eixo</a></div>' +
-          gridHTML(list) + "</div>";
+          (list.length ? '<a class="btn btn-ghost" href="#/topico/' + t.id + '">Abrir eixo</a>' : "") + "</div>" +
+          gridHTML(list, "Nenhum artigo publicado neste eixo ainda") + "</div>";
       }).join("") +
     "</div></section>";
   }
@@ -198,10 +213,11 @@
   function viewTopico(id) {
     var t = TOPICS.filter(function (x) { return x.id === id; })[0];
     if (!t) return view404();
-    var list = POSTS.filter(function (p) { return p.topic === id; })
+    var list = PUB.filter(function (p) { return p.topic === id; })
                     .sort(function (a, b) { return a.date.localeCompare(b.date); });
     return pageHead(t.name, esc(t.desc) + ' · <a href="#/topicos">todos os eixos</a>') +
-      '<section class="section"><div class="wrap">' + gridHTML(list) + "</div></section>";
+      '<section class="section"><div class="wrap">' +
+      gridHTML(list, "Nenhum artigo publicado neste eixo ainda") + "</div></section>";
   }
 
   function viewTag(tag) {
@@ -217,7 +233,7 @@
       "Os artigos na ordem em que foram escritos, que acompanha a sequência do conteúdo programático: " +
       "cada um assume o anterior e prepara o seguinte.") +
     '<section class="section"><div class="wrap"><div class="trail">' +
-      POSTS.map(function (p, i) {
+      PUB.map(function (p, i) {
         return '<div class="trail-item">' +
           '<span class="step">Etapa ' + (i + 1) + " · " + esc(topicName(p.topic)) + "</span>" +
           '<h3><a href="#/post/' + p.slug + '">' + esc(p.title) + "</a></h3>" +
@@ -268,7 +284,10 @@
          ["5.1 / 5.2 Etapas da produção e pipeline gráfico interativo", "pipeline-grafico", "O pipeline gráfico"],
          ["Aplicações em medicina e segurança", "medicina-seguranca-etica", "Senso crítico"]]
           .map(function (r) {
-            return "<tr><td>" + r[0] + '</td><td><a href="#/post/' + r[1] + '">' + r[2] + "</a></td></tr>";
+            var no_ar = PUB.some(function (p) { return p.slug === r[1]; });
+            return "<tr><td>" + r[0] + "</td><td>" + (no_ar
+              ? '<a href="#/post/' + r[1] + '">' + r[2] + "</a>"
+              : '<span class="muted">' + r[2] + " — em breve</span>") + "</td></tr>";
           }).join("") +
         "</tbody></table></div>" +
 
@@ -312,8 +331,8 @@
   function viewPost(slug) {
     var idx = postIndex(slug);
     if (idx < 0) return view404();
-    var post = POSTS[idx];
-    var prev = POSTS[idx - 1], next = POSTS[idx + 1];
+    var post = PUB[idx];
+    var prev = PUB[idx - 1], next = PUB[idx + 1];
 
     // sumário a partir dos h2 do corpo
     var tmp = document.createElement("div");
@@ -418,7 +437,7 @@
       var i = postIndex(r.path[1]);
       html = viewPost(r.path[1]);
       nav = "artigos";
-      if (i >= 0) { title = POSTS[i].title; desc = POSTS[i].lead; }
+      if (i >= 0) { title = PUB[i].title; desc = PUB[i].lead; }
       else title = "Não encontrado";
     } else { html = view404(); title = "Não encontrado"; }
 

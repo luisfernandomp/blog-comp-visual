@@ -85,6 +85,24 @@ branch `main`, pasta `/ (root)`. O site fica em
 Todos os caminhos são relativos, então o site funciona igualmente na raiz de um domínio ou em
 subpasta. O arquivo `.nojekyll` desliga o processamento do Jekyll, desnecessário aqui.
 
+## Rascunhos: controlando o que fica visível
+
+Um artigo com `draft: true` em `js/posts.js` some completamente do site — listagens, trilha,
+tópicos, etiquetas, busca, tabela do plano de ensino e navegação anterior/próximo. A URL dele
+passa a devolver "página não encontrada", então nada vaza por link direto.
+
+```js
+{
+  slug:  "imagem-digital",
+  draft: true,          // oculto: remova esta linha para publicar
+  ...
+}
+```
+
+**No momento só o artigo de 01/09/2026 ("Senso crítico") está publicado.** Para liberar os
+demais, apague a linha `draft: true` do artigo desejado — nada mais precisa mudar. Os eixos
+sem nenhum artigo publicado aparecem como "em breve" e não são clicáveis.
+
 ## Adicionando um artigo
 
 Acrescente um objeto ao final do array `window.POSTS`, em `js/posts.js`:
@@ -100,6 +118,7 @@ Acrescente um objeto ao final do array `window.POSTS`, em `js/posts.js`:
   image: "assets/img/post-novo.svg",
   alt:   "Descrição da ilustração para leitores de tela.",
   demo:  "convolucao",               // opcional; nome definido em js/demos.js
+  draft: true,                       // opcional; oculta o artigo enquanto estiver presente
   body:  `<p>HTML do texto. Use <h2 id="secao">…</h2> para entrar no sumário.</p>
           <div class="demo" data-demo="convolucao"></div>`
 }
