@@ -29,7 +29,7 @@ window.POSTS = [
 /* ------------------------------------------------------------------ 1 */
 {
   slug: "imagem-digital",
-  draft: true,          // oculto: remova esta linha para publicar
+  draft: false,          // oculto: remova esta linha para publicar
   title: "Do fóton ao pixel: como nasce uma imagem digital",
   lead: "Antes de filtrar, transformar ou renderizar qualquer coisa, é preciso entender o que exatamente estamos manipulando. Amostragem, quantização e as duas resoluções que definem uma imagem.",
   date: "2026-08-04",
@@ -123,7 +123,7 @@ filtros clássicos, a convolução.</p>
 /* ------------------------------------------------------------------ 2 */
 {
   slug: "convolucao-filtragem",
-  draft: true,          // oculto: remova esta linha para publicar
+  draft: false,          // oculto: remova esta linha para publicar
   title: "Convolução: o motor da filtragem espacial",
   lead: "Uma janela pequena deslizando sobre a imagem, uma soma ponderada em cada posição. Dessa operação minúscula saem o desfoque, a nitidez, o realce de bordas e a primeira camada de qualquer rede neural convolucional.",
   date: "2026-08-07",
