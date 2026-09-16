@@ -32,7 +32,7 @@ window.POSTS = [
   draft: false,          // oculto: remova esta linha para publicar
   title: "Do fóton ao pixel: como nasce uma imagem digital",
   lead: "Antes de filtrar, transformar ou renderizar qualquer coisa, é preciso entender o que exatamente estamos manipulando. Amostragem, quantização e as duas resoluções que definem uma imagem.",
-  date: "2026-08-04",
+  date: "2026-09-15",
   topic: "fundamentos",
   tags: ["amostragem", "quantização", "aliasing", "fundamentos"],
   image: "assets/img/post-imagem-digital.svg",
@@ -123,7 +123,7 @@ filtros clássicos, a convolução.</p>
 /* ------------------------------------------------------------------ 2 */
 {
   slug: "convolucao-filtragem",
-  draft: false,          // oculto: remova esta linha para publicar
+  draft: true,           // oculto: remova esta linha para publicar
   title: "Convolução: o motor da filtragem espacial",
   lead: "Uma janela pequena deslizando sobre a imagem, uma soma ponderada em cada posição. Dessa operação minúscula saem o desfoque, a nitidez, o realce de bordas e a primeira camada de qualquer rede neural convolucional.",
   date: "2026-08-07",
@@ -812,6 +812,7 @@ diagnóstico ou em um processo judicial.</p>
 /* ------------------------------------------------------------------ 9 */
 {
   slug: "medicina-seguranca-etica",
+  draft: false,           // oculto: remova esta linha para publicar
   title: "Senso crítico: computação visual em medicina, segurança e o limite da manipulação",
   lead: "Onde as técnicas dos artigos anteriores encontram consequências reais, e por que “realçar” uma imagem nunca é uma operação neutra.",
   date: "2026-09-01",
