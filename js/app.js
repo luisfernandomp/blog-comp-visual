@@ -255,7 +255,7 @@
           '<img src="assets/img/avatar.svg" alt="">' +
           "<div><strong>" + esc(SITE.author) + "</strong>" +
           "<p>Estudante de Ciência da Computação · 7ª etapa · Faculdade de Computação e Informática, " +
-          "Universidade Presbiteriana Mackenzie. Todos os textos e demonstrações deste site são autorais.</p></div>" +
+          "Universidade Presbiteriana Mackenzie. Os textos são autorais; as demonstrações interativas foram desenvolvidas com apoio de IA generativa.</p></div>" +
         "</div>" +
 
         "<h2 id='tema'>O tema escolhido</h2>" +
