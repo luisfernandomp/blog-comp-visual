@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Um único pixel aceso em uma grade vazia">
+<rect width="1200" height="630" fill="#0b1024"/>
+<g stroke="#232a55" stroke-width="2">
+<path d="M360 75v480M440 75v480M520 75v480M600 75v480M680 75v480M760 75v480M840 75v480"/>
+<path d="M360 75h480M360 155h480M360 235h480M360 315h480M360 395h480M360 475h480M360 555h480"/>
+</g>
+<rect x="600" y="235" width="80" height="80" fill="#f5c451"/>
+<text x="600" y="600" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="20" fill="#8f9ac4" letter-spacing=".08em">o que ficou</text>
+</svg>

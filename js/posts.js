@@ -896,6 +896,60 @@ inventa a imagem inteira.</p>
 para declará-lo quando a imagem vai embasar uma decisão sobre a vida de alguém, é a parte que a disciplina chama de
 senso crítico, e é a que sobrevive à próxima mudança de tecnologia.</p>
 `
+},
+
+/* ----------------------------------------------------------------- 10 */
+{
+  slug: "o-que-ficou",
+  title: "O que ficou",
+  lead: "Último post. Sem demo, sem fórmula, sem figura bonita. Só o que eu levo da disciplina e do próprio blog.",
+  date: "2026-11-11",
+  topic: "aplicacoes",
+  tags: ["reflexão", "encerramento"],
+  image: "assets/img/post-reflexao.svg",
+  alt: "Um único pixel aceso em uma grade vazia",
+  body: `
+<p>Esse é o último post e ele é diferente dos outros. Não tem canvas, não tem slider, não tem matriz. Os outros nove
+foram feitos para explicar alguma coisa. Esse é só para dizer o que sobrou na minha cabeça depois do semestre.</p>
+
+<p>A primeira coisa que mudou foi bem simples: eu parei de ver imagem como imagem. Antes da disciplina uma foto era
+uma foto. Agora é uma grade de números, e quase tudo que eu achava que era "mágica" de editor é conta em cima dessa
+grade. Desfoque é média. Nitidez é diferença. Borda é derivada. Parece pouco escrito assim, mas foi o que mais me
+marcou, porque tirou o mistério de um monte de coisa que eu usava todo dia sem saber o que era.</p>
+
+<p>A segunda foi perceber que explicar é muito mais difícil do que entender. Em aula eu achava que tinha entendido
+convolução. Quando fui fazer a demo, travei em coisa boba: o que fazer na borda da imagem, se normaliza o kernel ou
+não, por que o resultado ficava escuro. Só entendi de verdade quando o laço rodou pixel por pixel e a saída ficou
+errada na minha frente. Isso valeu para quase todos os posts. O rasterizador do post do pipeline foi o pior e o
+melhor: nada aparecia na tela até tudo estar certo, e quando apareceu o primeiro triângulo eu entendi o z-buffer de
+um jeito que slide nenhum tinha conseguido.</p>
+
+<p>O assunto que mais me deu trabalho foi o domínio da frequência. Eu aceito a conta, sei aplicar o filtro, mas
+demorou para a ideia fazer sentido, a de que a mesma imagem pode ser descrita como um monte de ondas somadas. Não vou
+fingir que virou algo natural. Ficou menos estranho, e acho que isso já é alguma coisa.</p>
+
+<p>O que eu mais gostei foi a parte de geometria e câmera. Coordenadas homogêneas pareciam um truque sem motivo, um
+número a mais só para atrapalhar, até a hora em que translação, rotação e projeção viraram todas a mesma operação.
+Foi o momento do semestre em que a matemática pareceu elegante e não só necessária.</p>
+
+<p>Escolhi o tema da jornada de um pixel porque eu precisava de um fio para não me perder na ementa. Olhando para
+trás, o fio ajudou mais a mim do que ao leitor. Cada post me obrigava a responder de onde aquele pixel vinha e para
+onde ia, e isso costurou assuntos que em aula pareciam separados: processamento de imagem de um lado, computação
+gráfica do outro. No fim é o mesmo caminho percorrido em sentidos opostos. Um analisa a imagem que já existe, o outro
+fabrica a imagem que ainda não existe.</p>
+
+<p>Também tem o que eu faria diferente. Os posts ficaram certinhos demais. Tem muito texto explicando e pouco de mim
+ali dentro, pouco do que deu errado, pouco das dúvidas. Se fosse começar de novo eu escreveria menos, mostraria mais
+os erros e publicaria no ritmo da disciplina, e não em blocos.</p>
+
+<p>E fica a pergunta do post anterior, que é a que eu realmente levo: o que eu estou descartando e o que eu estou
+inventando quando mexo numa imagem. No começo do semestre eu não teria nem pensado nisso. Hoje, quando vejo uma foto
+"melhorada", uma imagem gerada ou um filtro de celular, é a primeira coisa que me vem. Não saí da disciplina sabendo
+tudo de computação visual. Saí desconfiando melhor do que eu vejo, e sabendo mais ou menos onde procurar a conta que
+está por trás.</p>
+
+<p>Era isso. Obrigado, professor, pelo semestre, e obrigado a quem leu até aqui.</p>
+`
 }
 ];
 
