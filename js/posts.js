@@ -123,7 +123,6 @@ filtros clássicos, a convolução.</p>
 /* ------------------------------------------------------------------ 2 */
 {
   slug: "convolucao-filtragem",
-  draft: true,           // oculto: remova esta linha para publicar
   title: "Convolução: o motor da filtragem espacial",
   lead: "Uma janela pequena deslizando sobre a imagem, uma soma ponderada em cada posição. Dessa operação minúscula saem o desfoque, a nitidez, o realce de bordas e a primeira camada de qualquer rede neural convolucional.",
   date: "2026-08-07",
